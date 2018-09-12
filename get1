@@ -1,5 +1,99 @@
-One
-two
-three
+#Number 1
+greeting <- "Hello, World!"
+print(greeting)
+
+#Number 2
+x<- as.integer(2) 
+y <-3.0
+
+print(x)
+print(y)
+print(class(x))
+print(class(y))
+sumThem<-sum(x, y)
+print(sumThem)
+print(typeof(sumThem))
+intThem<-(as.integer(sumThem))
+print(intThem)
+print(typeof(intThem))
+
+#Numbe 3
+bob<-"8460.2"
+print(bob)
+bobNum<-as.numeric(bob)
+print(bobNum)
+bobInt<-as.integer(bobNum)
+print(bobInt)
+bobBool<-bobInt>0
+print(bobBool)
+
+#Number 4
+numLions<-42
+numTigers<-17
+country <-"South Africa"
+print(paste("The number of lions in ", country, " is ",numLions,". The number of tigers in ", country, " is ", numTigers, ".", sep="" ))
+
+#Number 5
+bioinformatics <- 1
+is <- 2
+forReal <- 3
+cool <- 4
+people <- 5
+print(bioinformatics + is + forReal + cool + people)
+
+#Number 6
+print(abs(-15.5))
+print(ceiling(3.8))
+print(floor(3.8))
+print(round(4.483847, digits=1))
+print(sqrt(9.99999))
+print(log(16))
+print(log2(16))
+
+#Number 7
+worms<-341
+maxWorms<-26
+
+boxesNeeded<-ceiling(worms/maxWorms)
+print(boxesNeeded)
+
+boxesMinOne<-boxesNeeded-1
+ExtraWorms<- worms-(boxesMinOne*maxWorms)
+print(ExtraWorms)
+
+#Number 8
+addThreeNumbers<-function(x,y,z)
+{
+  return(x+y+z)
+}
+
+#Number 9
+shouldIEat<- function (x){
+  if(x>=8 && x<=10){
+    return ("Go Eat!")
+  }
+  if(x >=3 && x<8){
+    return ("Don't eat!")
+  }
+  if( x>=1 && x<3){
+    return ("Take a nap!")
+  }
+  if(x<1 || x>10){
+    return ("Invlid input") 
+  }
+}
+
+#Number 10
+predictPopulationGrowth <- function (name, startNum, growthRate){
+  
+  day1<-startNum+(startNum*growthRate)
+  day2<-day1+(day1*growthRate)
+  day3<-day2+(day2*growthRate)
+  growthRounded<-round(day3)
+  growthInt<-as.integer(growthRounded)
+  print(paste("After 3 days, there will be ", growthInt, " ", name, sep = ""))
+}
+
+
 
 
